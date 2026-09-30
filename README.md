@@ -21,13 +21,13 @@ xmake config -m release -v -D
 xmake build
 ```
 
-xmake will automatically link resulting binaries in `lib` subfolder.
+xmake will automatically copy resulting binaries to `lib` subfolder.
 
 ### Understanding the workflow
 
 I chose xmake in particular because I grew fond of its focus on developer experience for C++. Especially for its excellent handling of 3rd party libraries and many chores which tend to be painful in other build tools. However xmake itself doesn't know about C++/CLI, that's where `dotnet-cppcli` addon comes in. It adds the proper compiler flags, gather dotnet runtime assemblies and manages dependencies from nuget. This is already way more than MSBuild does for you.
 
-All C++ sources are found in `cpp/src` subfolder, and its configuration in `cpp/xmake.lua`. Build artifacts and intermediate files should also stay inside cpp folder (except linking the build results to `lib` in project root). You can enable adequate auto-complete in VS Code and Visual Studio, both for managed assemblies and regular C++ code, with the following commands:
+All C++ sources are found in `cpp/src` subfolder, and its configuration in `cpp/xmake.lua`. Build artifacts and intermediate files should also stay inside cpp folder. You can enable adequate auto-complete in VS Code and Visual Studio, both for managed assemblies and regular C++ code, with the following commands:
 
 ```pwsh
 cd .\cpp
@@ -49,4 +49,4 @@ xmake config -m debug -v -D
 xmake build
 ```
 
-no need to change references in VL file (`lib` folder is linking to the debug output now). When attaching a debugger set both `Native` and `Managed` modes (or older versions may refer to it as "Mixed Mode" debugging).
+no need to change references in VL file (`lib` folder should contain the debug binaries now). When attaching a debugger set both `Native` and `Managed` modes (or older versions may refer to it as "Mixed Mode" debugging).

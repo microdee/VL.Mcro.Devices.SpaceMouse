@@ -17,5 +17,9 @@ target("VL.Mcro.Devices.SpaceMouse.Cpp")
         {"Stride.Core.Mathematics", "4.3.0.2507"}
     )
     after_build(function(target)
-        os.ln(path.absolute(target:targetdir()), path.absolute("../lib"))
+        local output = path.absolute("../lib")
+        if os.exists(output) then
+            os.rmdir(output)
+        end
+        os.cp(path.absolute(target:targetdir()), output)
     end)
