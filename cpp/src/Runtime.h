@@ -19,6 +19,12 @@ namespace NS_SM
     using namespace System::Reactive;
     using namespace VL::Core;
 
+    public enum class SmCoordinateSystem
+    {
+        Device,
+        Vvvv
+    };
+
     struct SmDeviceInstance
     {
         HidSupportedDevice DeviceModel;
