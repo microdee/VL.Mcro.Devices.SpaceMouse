@@ -2,6 +2,8 @@
 
 A port of [Open Unreal Space Mouse](https://github.com/microdee/OpenUnrealSpaceMouse) for vvvv-gamma. This is the third SpaceMouse integration for vvvv as of time of writing. There's one which is working with official drivers, one which is working from HID but with limited device support and this one which is also working with HID but supports all 3DConnexion Space Mice.
 
+The reading loop is done on a separate thread and accumulates all connected space-mice data into a global state. The process nodes are simply reading this state on the main-loop.
+
 This repository can also serve as a template for developing C++/CLI libraries for vvvv with a "totally bareable" developer experience with the help of [xmake](https://xmake.io).
 
 ## Install
