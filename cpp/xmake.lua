@@ -8,16 +8,17 @@ add_requires("hidapi 0.14.0", {configs = {runtimes = "MD"}})
 
 target("VL.Mcro.Devices.SpaceMouse.Cpp")
     add_rules("@addon/dotnet-cppcli/cppcli")
+    set_dotnet_version("8.0")
     set_kind("shared")
     add_files("src/*.cpp")
     add_headerfiles("src/*.h")
     add_packages("hidapi")
     add_nuget_packages(
-        {"VL.Core", "2026.8.0-0131-g2f3a63d2aa"},
+        {"VL.Core", "2025.7.4"},
         {"Stride.Core.Mathematics", "4.3.0.2507"}
     )
     after_build(function(target)
-        local output = path.absolute("../lib")
+        local output = path.absolute("../lib/net8.0")
         if os.exists(output) then
             os.rmdir(output)
         end

@@ -423,5 +423,5 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="FFxyaLiCzyrLvLOilOXz2p" Location="./lib/VL.Mcro.Devices.SpaceMouse.Cpp.dll" />
+  <PlatformDependency Id="FFxyaLiCzyrLvLOilOXz2p" Location="./lib/net8.0/VL.Mcro.Devices.SpaceMouse.Cpp.dll" />
 </Document>

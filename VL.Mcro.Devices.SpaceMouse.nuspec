@@ -2,20 +2,29 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
     <metadata>
         <id>VL.Mcro.Devices.SpaceMouse</id>
-        <version>1.0.0</version>
+        <version>1.0.0-pre1</version>
         <description>A native implementation for reading 3DConnexion Space Mice from HID directly</description>
         <authors>David Morasz</authors>
         <icon>icon\SpaceNav-Src_256.png</icon>
         <readme>README.md</readme>
         <license type="file">LICENSE</license>
-        <licenseUrl>https://github.com/microdee/VL.Mcro.Devices.SpaceMouse/blob/main/LICENSE</licenseUrl>
         <projectUrl>https://github.com/microdee/VL.Mcro.Devices.SpaceMouse</projectUrl>
         <copyright>Copyright (c) 2026 David Morasz</copyright>
         <tags>VL vvvv devices spacemouse 3dconnexion</tags>
-        <group targetFramework="net10.0">
-            <dependency id="VL.Core" version="2026.8.0-0131-g2f3a63d2aa" />
-            <dependency id="Stride.Core.Mathematics" version="4.3.0.2507" />
-        </group>
+        <dependencies>
+            <group targetFramework="net8.0">
+                <dependency id="VL.Core" version="2025.7.4" />
+                <dependency id="Stride.Core.Mathematics" version="4.3.0.2507" />
+            </group>
+        </dependencies>
     </metadata>
+    <files>
+        <file
+            src="**"
+            target="\"
+            exclude=".git\**\*;.vscode\**\*;cpp\**\*"
+            include="help\**;icon\**;lib\**;LICENSE;README.md"
+        />
+    </files>
     <!-- Optional 'files' node -->
 </package>
