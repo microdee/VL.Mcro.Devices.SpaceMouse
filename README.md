@@ -8,7 +8,7 @@ This repository can also serve as a template for developing C++/CLI libraries fo
 
 ## Install
 
-Get it via nuget manager in vvvv. For regular usage the sections below can be ignored.
+[Get it via nuget](https://www.nuget.org/packages/VL.Mcro.Devices.SpaceMouse) manager in vvvv. For regular usage the sections below can be ignored.
 
 ## Build
 
@@ -27,7 +27,7 @@ xmake will automatically copy resulting binaries to `lib` subfolder.
 
 ### Understanding the workflow
 
-I chose xmake in particular because I grew fond of its focus on developer experience for C++. Especially for its excellent handling of 3rd party libraries and many chores which tend to be painful in other build tools. However xmake itself doesn't know about C++/CLI, that's where `dotnet-cppcli` addon comes in. It adds the proper compiler flags, gather dotnet runtime assemblies and manages dependencies from nuget. This is already way more than MSBuild does for you.
+I chose xmake in particular because I grew fond of its focus on developer experience for C++. Especially for its excellent handling of 3rd party libraries and many chores which tend to be painful in other build tools. However xmake itself doesn't know about C++/CLI, that's where [`dotnet-cppcli`](https://github.com/microdee/xmake.dotnet-cppcli) addon comes in. It adds the proper compiler flags, gather dotnet runtime assemblies and manages dependencies from nuget. This is already way more than MSBuild does for you.
 
 All C++ sources are found in `cpp/src` subfolder, and its configuration in `cpp/xmake.lua`. Build artifacts and intermediate files should also stay inside cpp folder. You can enable adequate auto-complete in VS Code and Visual Studio, both for managed assemblies and regular C++ code, with the following commands:
 
