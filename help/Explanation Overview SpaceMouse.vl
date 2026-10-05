@@ -200,11 +200,6 @@
             <Pin Id="Oz1cuWtmWjWK9hnODz0vhU" Name="Camera Controls" Kind="OutputPin" />
             <Pin Id="P32CT92HpuxQcBjvLk8LtT" Name="Enabled" Kind="InputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="LcbAK5N6ju6QJr2uWwKDqb">
             <Fragment Id="AxvpGOoKAcXPS2Jh2lkVdi" Patch="KRgAbkscUP5P42mC1SYTvl" Enabled="true" />
             <Fragment Id="GQMIf3XGeLANOwrNadN3J3" Patch="Q6RdDBcf2fNLkKACh5h7Yv" Enabled="true" />
@@ -345,11 +340,6 @@
             <Pin Id="AqodJ4HGV9tODqNlopnZco" Name="Reset" Kind="InputPin" Bounds="995,309" />
             <Pin Id="S2daUJdVMtmQFyLxxUXaKl" Name="CameraState3d" Kind="OutputPin" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="NQRLu4ug08WPvjlXQoS5d9">
             <Fragment Id="UcPFWKJniK4OAep1JU7MEO" Patch="GzkyeBeTManOaZxregkRwg" Enabled="true" />
             <Fragment Id="DPJ9gqu0tttNqdS1svs04o" Patch="ECyRKWvEGZWLVZkFspAPU2" Enabled="true" />
@@ -505,11 +495,6 @@
             <Pin Id="VivyowjmmG5NUqweDvUUm9" Name="Show Helper" Kind="InputPin" Bounds="433,554" />
             <Pin Id="T8M4UGZJlVSMYSW7FQcBbk" Name="Output" Kind="OutputPin" Bounds="638,601" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="FQkfsu8tmbILJzcAshbnnM">
             <Fragment Id="ABaGOPIRa62MQ4Z46Vwb1I" Patch="EmwNU6lEut5NMxIIQiUgD2" Enabled="true" />
             <Fragment Id="JX9X3AnXTAENJdAK48ke2I" Patch="Vq39Eufn0ILOUSpg1vLB8P" Enabled="true" />
@@ -845,7 +830,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="QGMK5lER1VLNTMtDLe1KU9" Comment="On" Bounds="478,529,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HLI3BjKdWw5LNoSxtK9u4K" Comment="Up Edge" Bounds="555,530,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HLI3BjKdWw5LNoSxtK9u4K" Comment="Up Edge" Bounds="555,531,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="U93kfhv0pCzMUfUz78wz62" Comment="Down Edge" Bounds="656,530,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="330,1310,85,19" Id="UxweM0cr8i3PTdt4ppHr3M">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.Engine.vl">
@@ -869,7 +854,7 @@
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="Mjq7eEFEWyfMEvQaahPQ0h" Name="Bounds" Kind="InputPin" DefaultValue="2716, 803, 937, 852" />
+            <Pin Id="Mjq7eEFEWyfMEvQaahPQ0h" Name="Bounds" Kind="InputPin" DefaultValue="2358, 845, 937, 852" />
             <Pin Id="Djum7cwEHlWNGcXBVLYZVJ" Name="Bound to Document" Kind="InputPin" />
             <Pin Id="FxlLZjyKb8gPu7s5dIhg8M" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
             <Pin Id="JfuVCLTiOmZQBlW1ICI9Ft" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -1022,14 +1007,6 @@
               <Choice Kind="TypeFlag" Name="Vector3" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DXcqZhcU2yROZlqsPeO4xd" Comment="Camera Mode" Bounds="490,217,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="350,1070,45,19" Id="L8bw0IrK9EBQP8Zq6n2F8q">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1043,7 +1020,7 @@
             <Pin Id="L563oQIt9buMTae9muLJ6b" Name="Input 2" Kind="InputPin" />
             <Pin Id="OoTW7iR7KSJPfuIP0YhnQA" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="578,600,56,19" Id="R6uk6O2F3SZLtNwp7u9wsc">
+          <Node Bounds="39,740,56,19" Id="R6uk6O2F3SZLtNwp7u9wsc">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -1053,17 +1030,7 @@
             <Pin Id="ENRnLOt5v1wPqhQwZ4lY6Q" Name="Up Edge" Kind="OutputPin" />
             <Pin Id="UHmpRqrJsoHOPug06ztQIB" Name="Down Edge" Kind="OutputPin" />
           </Node>
-          <Node Bounds="553,630,30,19" Id="UA64AZeYXD3P0XOmf4nDLJ">
-            <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="OR" />
-            </p:NodeReference>
-            <Pin Id="JuGODdWKlSlMupebMG8rOw" Name="Input" Kind="StateInputPin" />
-            <Pin Id="PXyzf6lGr3wLvwLWLEEEa8" Name="Input 2" Kind="InputPin" />
-            <Pin Id="GfKa3cmmh3FNbNEBeWJOtt" Name="Output" Kind="StateOutputPin" />
-          </Node>
-          <Pad Id="VXdtH7vNp2lQIDWwbH03ew" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="490,277" />
-          <Pad Id="OuuD8QxzqbdNOmGkuJbL5j" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="580,580" />
+          <Pad Id="OuuD8QxzqbdNOmGkuJbL5j" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="41,720" />
           <Pad Id="Di5yIjoOcZWPU1wwObavpR" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="352,1040" />
           <Pad Id="FNxH9l9KAG7OZZDggHt2xb" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="234,1340" />
           <Node Bounds="277,1350,45,19" Id="OFwp5mW7nI2MzljG2tk2LK">
@@ -1135,32 +1102,7 @@
               <Choice Kind="TypeFlag" Name="SmCoordinateSystem" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="153,1280,145,19" Id="RTT9rTXSYZgPJiWbIkpmZu">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="Explanation Overview SpaceMouse.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SmEditorCamera" />
-            </p:NodeReference>
-            <Pin Id="IA7LfM1dxuzNTkwA4FOQfR" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BZVXLWT0jXVOYaSx4k6uek" Name="Initial Interest" Kind="InputPin" />
-            <Pin Id="PqsAYNDjieENqxpsdLCRw8" Name="Initial Yaw" Kind="InputPin" />
-            <Pin Id="FipYHwbFriRQV89Xo9G2Ve" Name="Initial Pitch" Kind="InputPin" />
-            <Pin Id="OYgVvA88Ct5MSCFr5ZPfGw" Name="Initial Vertical Field Of View" Kind="InputPin" />
-            <Pin Id="SvK2KDhQpUcNUhyy0LQ4bz" Name="Near Clip Plane" Kind="InputPin" />
-            <Pin Id="BVGDwpdEdTrNrudwVJWeFK" Name="Far Clip Plane" Kind="InputPin" />
-            <Pin Id="TTcbbZEcBwjPxuAKz23n2K" Name="Reset" Kind="InputPin" />
-            <Pin Id="PCk8A1tqAaXOZcWhsOwE4V" Name="Show Helper" Kind="InputPin" />
-            <Pin Id="GncDjLBRc7fMKmJ9kfr7WY" Name="Output" Kind="OutputPin" />
-          </Node>
           <Pad Id="LXlgTsbOX7mQPlyapg5QJW" Bounds="174,215,239,42" ShowValueBox="true" isIOBox="true" Value="The device has a different coordinate system than the vvvv convention">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="R66LQ9ehalqP7n01x8NRlQ" Bounds="537,237,350,40" ShowValueBox="true" isIOBox="true" Value="Switch to controlling the camera with space mouse. There are two example implementations in this help patch.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1187,10 +1129,20 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <ControlPoint Id="O6eYcMCHlJaLwN49FWCIWz" Bounds="319,1171" />
+          <Node Bounds="553,580,48,19" Id="NeEnVsDbSq0OVYyk8X5z7G">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Toggle" />
+            </p:NodeReference>
+            <Pin Id="NzPGSpYo39BLVSV2IEEfSj" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BEmDWm9cWTpOYdK6O4B8Z3" Name="Flip" Kind="ApplyPin" />
+            <Pin Id="Vm4POgnTnLvMFnfvsedzLg" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="Fl3TteLWh4tPeE17CskHAw" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="DVBFFPI2sgmNFVq4fFC7HP" SlotId="URmBLWJk6BsNcl3VLY7Pt0" Bounds="555,631" />
         </Canvas>
         <Patch Id="IqF49I0tlTDMwut2LJtunA" Name="Create" />
-        <Patch Id="Lp9cnMT4v1GNNqYO74k8YW" Name="Update" ParticipatingElements="HXu4p2Cj702OFVPatOF04A" />
+        <Patch Id="Lp9cnMT4v1GNNqYO74k8YW" Name="Update" />
         <ProcessDefinition Id="EGhBzGitOPyPOX66q8Uh6W">
           <Fragment Id="HoKyWoKZ7ETPIcUbLBALcQ" Patch="IqF49I0tlTDMwut2LJtunA" Enabled="true" />
           <Fragment Id="BKcKXI0a9t4PacMG7FEfzM" Patch="Lp9cnMT4v1GNNqYO74k8YW" Enabled="true" />
@@ -1215,9 +1167,7 @@
         <Link Id="OVLJ9LAhM42QHxUrO0xdgB" Ids="Ttv3mdH7qK2PqMICXdS5F7,DxbJMZNiYscO8wa3PZ8Dfh" />
         <Link Id="IQyIBo6XHhKMy0BVvyRxX0" Ids="C6r9ZOS3WCLMihjOnUJP8H,R7u1GPqSHg6NCVwrdATCwm" />
         <Link Id="TVnehLZsM98MxGtTb4iwX3" Ids="OoTW7iR7KSJPfuIP0YhnQA,BfFzfhkZXu3P7I2uWs1ZKo" />
-        <Link Id="SkYfUHmYgKfNE66tPkuwxN" Ids="ENRnLOt5v1wPqhQwZ4lY6Q,PXyzf6lGr3wLvwLWLEEEa8" />
         <Slot Id="URmBLWJk6BsNcl3VLY7Pt0" Name="CamMode" />
-        <Link Id="HXu4p2Cj702OFVPatOF04A" Ids="DXcqZhcU2yROZlqsPeO4xd,VXdtH7vNp2lQIDWwbH03ew" />
         <Link Id="KWDyPg3MoHePyfEGvpIOXa" Ids="OuuD8QxzqbdNOmGkuJbL5j,P6zStHNEuSnM1VARWc3s3e" />
         <Link Id="UtS5vJfjSEIP6v5gMDzb7S" Ids="Di5yIjoOcZWPU1wwObavpR,IUf0tvzBDPOL0LvXheRjSI" />
         <Link Id="KVGKA8o9EhpOc82XgQUEtF" Ids="FNxH9l9KAG7OZZDggHt2xb,UmkPYnSLDkZMp3WSoPO75k" />
@@ -1227,16 +1177,17 @@
         <Link Id="F6iZzFMWZRXM2Vc0mgBKis" Ids="UW0gRMuW9OFNY9FzMNupRv,ETaFKhWaqNPL9GCRVm8RNk" />
         <Link Id="V68JDGqU5UELGgFnl2wUY6" Ids="EuXlcabJhRDNmwLksLonI3,VjrWpk3GJyNM3BYYL9VXlY" />
         <Link Id="R3VqSGooc5MNA8zqQo7V5G" Ids="Bq6CF6Ei4VkLrmGelVNIHN,IbLFeMAxRxtPuDZF4nyVPb" />
-        <Link Id="VNsXig5r4AvMCHeIOKm75I" Ids="GoHEEPfp7fSMxkj5w7znio,O6eYcMCHlJaLwN49FWCIWz,PbEPjJNpohCM8Id6QN3YUc" />
         <Link Id="UFqqDbaVny3OnRWSb7CUbq" Ids="BPHB7rsN9MuLI5r2gtN1UQ,VXJ8u2bbJrbOZozsfx2i0y" />
         <Link Id="Biq5sd9qIDRPMcFi4HZZYp" Ids="Eamy62NQXcQP1em3NMmZCD,V0mS7jbAkCmNSqG8gPcmEJ" />
-        <Link Id="KdB3q6NWWEVLz6VmrOUu7L" Ids="GfKa3cmmh3FNbNEBeWJOtt,BTFHKD95spJOPLqXNHToPd" />
-        <Link Id="Ir0sjYpyDnJLWtxQYFgUQ7" Ids="HLI3BjKdWw5LNoSxtK9u4K,JuGODdWKlSlMupebMG8rOw" />
         <Link Id="MegF2IlY2cTMIYJejL4MHe" Ids="Caw1yhfH39LMDMZxk1unu9,Ai1DtsrNM4COy2RL4WCIf9" />
+        <Link Id="UHZn7FZV5DeNseZ2q0nrQP" Ids="ENRnLOt5v1wPqhQwZ4lY6Q,BTFHKD95spJOPLqXNHToPd" />
+        <Link Id="UujRjnlHiFZMYKjUMgisUr" Ids="HLI3BjKdWw5LNoSxtK9u4K,BEmDWm9cWTpOYdK6O4B8Z3" />
+        <Link Id="U6i09ST1yczMNEEokVX21u" Ids="Fl3TteLWh4tPeE17CskHAw,DVBFFPI2sgmNFVq4fFC7HP" />
+        <Link Id="LYhePTvs9ehP2pDnE5td6G" Ids="GoHEEPfp7fSMxkj5w7znio,PbEPjJNpohCM8Id6QN3YUc" />
       </Patch>
     </Node>
   </Patch>
   <DocumentDependency Id="HowW6bb5tWwMErfKNAAzNs" Location="../VL.Mcro.Devices.SpaceMouse.vl" />
   <NugetDependency Id="F92esFxbpAOMDux7Do0fXq" Location="VL.Stride" />
-  <NugetDependency Id="E4WACzgwg2NMSVnzgnDag6" Location="VL.EditingFramework" Version="2026.8.0-0131-g2f3a63d2aa" />
+  <NugetDependency Id="E4WACzgwg2NMSVnzgnDag6" Location="VL.EditingFramework" />
 </Document>
