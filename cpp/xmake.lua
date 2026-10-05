@@ -17,10 +17,10 @@ target("VL.Mcro.Devices.SpaceMouse.Cpp")
         {"VL.Core", "2025.7.4"},
         {"Stride.Core.Mathematics", "4.3.0.2507"}
     )
-    after_build(function(target)
-        local output = path.absolute("../lib/net8.0")
+    add_cppcli_step("install_lib", { triggered_by = "after_build"}, function(ctx)
+        local output = path.absolute("../lib/net" .. ctx.dotnet.version)
         if os.exists(output) then
             os.rmdir(output)
         end
-        os.cp(path.absolute(target:targetdir()), output)
+        os.cp(path.absolute(ctx.target:targetdir()), output)
     end)
