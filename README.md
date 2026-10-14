@@ -15,10 +15,6 @@ This repository can also serve as a template for developing C++/CLI libraries fo
 ```pwsh
 cd .\cpp
 
-# The extra addons only require manual installation until they're canonized in xrepo. Need to be done only once
-xmake addon --install github:microdee/xmake.rats-utils
-xmake addon --install github:microdee/xmake.dotnet-cppcli
-
 xmake config -m release -v -D
 xmake build
 ```
