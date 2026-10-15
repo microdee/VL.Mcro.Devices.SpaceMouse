@@ -1,6 +1,4 @@
-
-add_repositories("xrepo-md https://github.com/microdee/xmake-repo.git md")
-add_addons("dotnet-cppcli v1.0.1")
+add_addons("dotnet-cppcli")
 
 add_rules("mode.debug", "mode.release")
 set_languages("c++20")
