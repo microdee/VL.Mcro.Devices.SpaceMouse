@@ -13,6 +13,14 @@ namespace NS_SM
 
     static SmGlobals Globals;
 
+    void SmGlobals::Close()
+    {
+        if (!NeedsStart && AsyncMainLoop.joinable())
+        {
+            AsyncMainLoop.request_stop();
+        }
+    }
+
     static void DiscoverDevices()
     {
         using namespace std::chrono_literals;
@@ -101,9 +109,17 @@ namespace NS_SM
             Globals.NeedsStart = false;
             Globals.ManagedOutput = gcnew SmOutputManaged();
             Globals.AsyncMainLoop = std::jthread(RuntimeMainloop);
-            AppHost::CurrentOrGlobal->OnExit->Subscribe(gcnew AppExitObserver());
+            if (AppHost::CurrentOrGlobal && AppHost::CurrentOrGlobal->OnExit)
+            {
+                AppHost::CurrentOrGlobal->OnExit->Subscribe(gcnew AppExitObserver());
+            }
         }
         return Globals.ManagedOutput;
+    }
+
+    void SmRuntime::CloseSpaceMice()
+    {
+        Globals.Close();
     }
 
     void AppExitObserver::OnNext(Unit)
@@ -113,9 +129,6 @@ namespace NS_SM
 
     void AppExitObserver::OnCompleted()
     {
-        if (!Globals.NeedsStart && Globals.AsyncMainLoop.joinable())
-        {
-            Globals.AsyncMainLoop.request_stop();
-        }
+        Globals.Close();
     }
 }

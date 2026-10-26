@@ -51,6 +51,8 @@ namespace NS_SM
 
         gcroot<SmOutputManaged^> ManagedOutput;
         std::jthread AsyncMainLoop;
+
+        void Close();
     };
 
     void DiscoverDevices();
@@ -61,5 +63,6 @@ namespace NS_SM
     {
     public:
         static SmOutputManaged^ SpaceMouseMainLoop();
+        static void CloseSpaceMice();
     };
 }
